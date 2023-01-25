@@ -30,13 +30,19 @@ func main() {
 		x1 = (-b + math.Sqrt(D)) / (2 * a)
 		x2 = (-b - math.Sqrt(D)) / (2 * a)
 
+		fmt.Println("Ваше уравнение имеет 2 корня\nD = " + fmt.Sprint(D))
+		fmt.Println("X1: " + fmt.Sprint(x1) + "\nX2: " + fmt.Sprint(x2))
+
 	} else if D == 0 {
 
 		var x float64
 
 		x = (-b) / (2 * a)
-	} else {
 
+		fmt.Println("Ваше уравнение имеет один корень х: " + fmt.Sprint(x))
+
+	} else {
+		fmt.Println("Ваше уравнение не имеет корней")
 	}
 
 }

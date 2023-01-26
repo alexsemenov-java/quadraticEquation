@@ -45,4 +45,6 @@ func main() {
 		fmt.Println("Ваше уравнение не имеет корней")
 	}
 
+	fmt.Scan(&a)
+
 }
